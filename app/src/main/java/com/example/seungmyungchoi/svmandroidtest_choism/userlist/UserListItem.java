@@ -1,9 +1,9 @@
 package com.example.seungmyungchoi.svmandroidtest_choism.userlist;
 
 public class UserListItem {
-    public String avatarUrl;
-    public int id;
-    public String login;
+    private String avatarUrl;
+    private int id;
+    private String login;
 
     public UserListItem(String avatarUrl, int id, String login){
         this.avatarUrl = avatarUrl;

@@ -92,7 +92,6 @@ public class UserInfoActivity extends AppCompatActivity {
         userRepoListRecyclerView = (RecyclerView) findViewById(R.id.activity_user_info_recyclerview);
         userRepoListRecyclerView.setHasFixedSize(true);
         userRepoListLayoutManager = new LinearLayoutManager(this);
-        userRepoListRecyclerView.setBackgroundColor(Color.WHITE);
         userRepoListRecyclerView.setLayoutManager(userRepoListLayoutManager);
         userRepoRefresh = (SwipeRefreshLayout) findViewById(R.id.activity_user_info_refresh);
 
@@ -109,7 +108,6 @@ public class UserInfoActivity extends AppCompatActivity {
         userRepoRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                userRepoListRecyclerView.setBackgroundColor(Color.WHITE);
                 userRepoListItems.clear();
                 page = 0;
                 makeUserRepoInfo(login, ++page);
@@ -146,7 +144,6 @@ public class UserInfoActivity extends AppCompatActivity {
                         UserRepoListItem userRepoListItem = new UserRepoListItem(repoName, repoDescription, repoStartgazersCount, repoWatcherCount, repoCreatedAt);
                         userRepoListItems.add(userRepoListItem);
                     }
-                    userRepoListRecyclerView.setBackgroundColor(Color.BLACK);
                     userRepoListAdapter.notifyDataSetChanged();
                 }
             }

@@ -92,7 +92,7 @@ public class UserListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(getApplicationContext(), UserInfoActivity.class);
-                intent.putExtra("login", userListItems.get(position).login);
+                intent.putExtra("login", userListItems.get(position).getLogin());
                 startActivity(intent);
             }
 
@@ -138,7 +138,7 @@ public class UserListActivity extends AppCompatActivity {
                     userListItems.add(userListItem);
                 }
 
-                since = userListItems.get(userListItems.size() - 1).id;
+                since = userListItems.get(userListItems.size() - 1).getId();
                 Log.e("since", "" + since);
                 userListAdapter.notifyDataSetChanged();
             }

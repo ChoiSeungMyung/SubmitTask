@@ -12,11 +12,6 @@ import com.example.seungmyungchoi.svmandroidtest_choism.R;
 
 import java.util.ArrayList;
 
-/*Todo
-    주석작성 & 코드정리
-    다른해상도에서 확인해보기
-     */
-
 public class UserRepoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     public class UserRepoListHolder extends RecyclerView.ViewHolder{
         private TextView repoName;
