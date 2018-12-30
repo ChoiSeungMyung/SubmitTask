@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SVmAndroidTest_ChoiSM</string>
+
+    <string name="github_token">ef43212f384255f1d77e5fe3638ebb3d6002088f</string>
+    <string name="client_id">ce5873efb4a2c8d44a4d</string>
+    <string name="client_secret">f2b29967594a5de58d3384338fadb35bf03ba35a</string>
+</resources>
